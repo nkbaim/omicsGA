@@ -1,16 +1,24 @@
 Package: omicsGA
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Comprehensive Framework for Omics Data Group-Analysis
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: 
+    person("Du", "Yang", email = "dyang627@gmail.com", role = c("aut", "cre"))
+Description: A framework for batch comparison analysis of omics data, including 
+    survival analysis, differential expression analysis, GSEA, and GSVA analysis.
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    survival,
+    survminer,
+    limma,
+    DESeq2,
+    fgsea,
+    GSVA,
+    dplyr,
+    tidyr,
+    ggplot2 
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
